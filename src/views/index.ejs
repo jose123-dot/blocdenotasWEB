@@ -9,7 +9,25 @@
     <div class="container-fluid">
         <%- include('layoults/nav') %>
 
-        
+            <form action="" class="form">
+                <div class="mb-3">
+                    <h2>Nota</h2>
+                    <label for="title" class="form-label">Title: </label>
+                    <input type="text" class="form-control" id="title" placeholder="Title">
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripcion</label>
+                    <textarea class="form-control" id="decripcions" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+
+                    <input class="btn btn-success" type="submit" value="Editar">
+                </div>
+
+            </form>
+
+
+
     </div>
 
     <%- include('layoults/script') %>
