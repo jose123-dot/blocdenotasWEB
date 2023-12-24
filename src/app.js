@@ -22,9 +22,9 @@ app.use(express.urlencoded({extended: false}));
 
 
 //routes
-app.use('/', (req, res)=>{
-    res.render('index');
-});
+app.use(require('./routes/indexroutes'));
+app.use(require('./routes/noteroutes'));
+
 
 
 //static file
